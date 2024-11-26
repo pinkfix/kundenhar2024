@@ -5,3 +5,63 @@ Reklamvarningsfärg mm: #fcba04                  Gul
 Textfärg för Sekundär färg mm: #590004          Träbrun
 Textfärg Huvudfärg mm: #250001                  Svartish
 */
+
+/* Gäller hela hemsidan */
+
+html {
+    width: 98vw;
+}
+
+body {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-rows: 10vh 200vh 60vh;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas:
+    'hd hd hd'
+    'mn mn mn'
+    'ft ft ft'
+    ;
+}
+
+header {
+    grid-area: hd;
+    display: grid;
+    margin: 0px;
+    padding: 0px;
+    
+    grid-template-columns: 25% 75%;
+    grid-template-areas:
+    'lg nv'
+    ;
+}
+div.logo {
+    grid-area: lg;
+    background-color: #ff5733;
+    border-color: #fcba04;
+}
+nav {
+    grid-area: nv;
+    background-color: #ff5733;
+    border-color: #fcba04;
+}
+
+main {
+    grid-area: mn;
+}
+
+footer {
+    grid-area: ft;
+}
+
+/* Gäller endast index */
+
+
+
+/* Gäller endast aboutus */
+
+
+
+/* Gäller endast third */
