@@ -9,7 +9,7 @@ Textfärg Huvudfärg mm: #250001                  Svartish
 /* Gäller hela hemsidan */
 
 html {
-    width: 98vw;
+    size: 100%;
 }
 
 body {
@@ -17,12 +17,12 @@ body {
     border: 0px;
     padding: 0px;
     display: grid;
+    row-gap: 20px;
     grid-template-rows: 10vh 200vh 60vh;
-    grid-template-columns: 20% 60% 20%;
     grid-template-areas:
-    'hd hd hd'
-    'mn mn mn'
-    'ft ft ft'
+    'hd'
+    'mn'
+    'ft'
     ;
 }
 
@@ -31,34 +31,120 @@ header {
     display: grid;
     margin: 0px;
     padding: 0px;
+    background-color: #ad3d24;
     
     grid-template-columns: 25% 75%;
     grid-template-areas:
     'lg nv'
     ;
 }
+
 div.logo {
     grid-area: lg;
+    border-radius: 10px;
+    display: flex;
+    max-height: 10vh;
+    justify-content: center;
     background-color: #ff5733;
-    border-color: #fcba04;
 }
+div.logo img {
+    max-height: 10vh;
+}
+
 nav {
     grid-area: nv;
+    display: flex;
+    border-radius: 10px;
     background-color: #ff5733;
-    border-color: #fcba04;
 }
+
+nav a {
+    color: #250001;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a:hover {
+    background-color: #250001;
+    color: #ff5733;
+    border-radius: 10px;
+}
+
 
 main {
     grid-area: mn;
 }
 
+
+
 footer {
     grid-area: ft;
+    flex-direction: column;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    background-color: #ff5733;
+    text-emphasis-color: #250001;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* Gäller endast index */
 
-
+main#a {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    'av saa ah'
+    'av sab ah'
+    'av sac ah'
+    'av sad ah'
+    'av sae ah'
+    ;
+}
+aside.adsv {
+    grid-area: av;
+    background-color: #ff5733;
+    
+}
+aside.adsh {
+    grid-area: ah;
+    background-color:#ff5733;
+}
+section#saa {
+    grid-area: saa;
+    background-color:#ff5733;
+    border-radius: 10px;
+    padding: 10px;
+}
+section#sab {
+    grid-area: sab;
+    background-color:#ff5733;
+    border-radius: 10px;
+    padding: 10px;
+}
+section#sac {
+    grid-area: sac;
+    background-color:#ff5733;
+    border-radius: 10px;
+    padding: 10px;
+}
+section#sad {
+    grid-area: sad;
+    background-color:#ff5733;
+    border-radius: 10px;
+    padding: 10px;
+}
+section#sae {
+    grid-area: sae;
+    background-color:#ff5733;
+    border-radius: 10px;
+    padding: 10px;
+}
 
 /* Gäller endast aboutus */
 
