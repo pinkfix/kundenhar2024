@@ -126,6 +126,14 @@ section#sab {
     background-color:#ff5733;
     border-radius: 10px;
     padding: 10px;
+    align-items: center;
+    font-size: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+div#saba {
+    font-size: 18px;
+    max-width: 200px;
 }
 section#sac {
     grid-area: sac;
@@ -148,6 +156,41 @@ section#sae {
 
 /* Gäller endast aboutus */
 
+main#b{
+    display: grid;
+    grid-row: 160vh 60vh;
+}
+div.team {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: ;
+    grid-template-rows: 40vh 40vh 40vh;
+    grid-template-areas:
+    'baa bab bac'
+    'bba bbb bbc'
+    'bca bcb bcc'
+    ;
+}
+
+div.supporters {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+    grid-template-areas:
+    'dia gld bnz';
+}
+div#diasup {
+    grid-area: dia;
+    font-size: xx-large;
+    
+}
+div#gldsup {
+    grid-area: gld;
+}
+div#brosup {
+    grid-area: bnz;
+    font-size: xx-small;
+    flex-wrap: wrap;
+}
 
 
 /* Gäller endast third */
