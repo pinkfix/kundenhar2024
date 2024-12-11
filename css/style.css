@@ -163,13 +163,24 @@ main#b{
 div.team {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: ;
+    gap: 10px;
     grid-template-rows: 40vh 40vh 40vh;
     grid-template-areas:
     'baa bab bac'
     'bba bbb bbc'
     'bca bcb bcc'
     ;
+}
+div.auimage{
+    background-color: #ff5733;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+section#au {
+    background-color: #ad3d24;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 div.supporters {
