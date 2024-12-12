@@ -118,14 +118,31 @@ aside.adsh {
 section#saa {
     grid-area: saa;
     background-color:#ff5733;
+    color: #000000;
     border-radius: 10px;
     padding: 10px;
+    gap: 10px;
+    align-items: center;
+    font-size: 80px;
+    display: flex;
+    justify-content: space-around;
 }
+div#saaa {
+    font-size: 18px;
+    max-width: 20vw;
+}
+section#saa:hover{
+    color:#ff5733;
+    background-color: #000000
+}
+
 section#sab {
     grid-area: sab;
     background-color:#ff5733;
+    color: #000000;
     border-radius: 10px;
     padding: 10px;
+    gap: 10px;
     align-items: center;
     font-size: 80px;
     display: flex;
@@ -133,25 +150,82 @@ section#sab {
 }
 div#saba {
     font-size: 18px;
-    max-width: 200px;
+    max-width: 20vw;
 }
+section#sab:hover{
+    color:#ff5733;
+    background-color: #000000;
+}
+
 section#sac {
     grid-area: sac;
     background-color:#ff5733;
+    color: #000000;
     border-radius: 10px;
     padding: 10px;
+    gap: 10px;
+    align-items: center;
+    font-size: 80px;
+    display: flex;
+    justify-content: space-around;
 }
+div#saca {
+    font-size: 18px;
+    max-width: 20vw;
+}
+section#sac:hover{
+    color:#ff5733;
+    background-color: #000000;
+}
+
 section#sad {
     grid-area: sad;
     background-color:#ff5733;
+    color: #000000;
     border-radius: 10px;
     padding: 10px;
+    gap: 10px;
+    align-items: center;
+    font-size: 80px;
+    display: flex;
+    justify-content: space-around;
 }
+div#sada {
+    font-size: 18px;
+    max-width: 20vw;
+}
+div#sada a{
+    color: #4e81f1;
+    text-decoration: none;
+}
+div#sada a:hover{
+    color: #00ffff;
+}
+section#sad:hover{
+    color:#ff5733;
+    background-color: #000000;
+}
+
 section#sae {
     grid-area: sae;
     background-color:#ff5733;
+    color: #000000;
     border-radius: 10px;
     padding: 10px;
+    gap: 10px;
+    align-items: center;
+    font-size: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+div#saea {
+    font-size: 18px;
+    max-width: 20vw;
+}
+section#sae:hover{
+    color:#ff5733;
+    background-color: #000000;
+    
 }
 
 /* Gäller endast aboutus */
@@ -186,6 +260,8 @@ div.auimage{
     background-color: #ff5733;
     padding: 10px;
     color: #fffffc;
+    display: flex;
+    justify-content: center;
     border-radius: 5px;
 
 }
@@ -236,6 +312,7 @@ div#brosup {
     font-size: xx-small;
     display: flex;
     padding: 5px;
+    border-radius: 10px;
     flex-direction: column;    
     align-items: center;
     text-overflow: ellipsis;
