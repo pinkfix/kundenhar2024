@@ -18,7 +18,7 @@ body {
     padding: 0px;
     display: grid;
     row-gap: 20px;
-    grid-template-rows: 10vh 200vh 60vh;
+    grid-template-rows: 1fr 30fr 9fr;
     grid-template-areas:
     'hd'
     'mn'
@@ -109,11 +109,13 @@ main#a {
 aside.adsv {
     grid-area: av;
     background-color: #ff5733;
+    border-radius: 10px;
     
 }
 aside.adsh {
     grid-area: ah;
     background-color:#ff5733;
+    border-radius: 10px;
 }
 section#saa {
     grid-area: saa;
@@ -206,6 +208,9 @@ section#sad:hover{
     background-color: #000000;
 }
 
+a#asae {
+    text-decoration-line: none;
+}
 section#sae {
     grid-area: sae;
     background-color:#ff5733;
@@ -232,14 +237,14 @@ section#sae:hover{
 
 main#b{
     display: grid;
-    grid-row: 160vh 60vh;
+    grid-row: 3fr 1fr;
     gap: 5px;
 }
 div.team {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
-    grid-template-rows: 5vh 40vh 40vh 40vh;
+    grid-template-rows: 5vh 1fr 1fr 1fr;
     grid-template-areas:
     'tt tt tt'
     'baa bab bac'
@@ -261,6 +266,7 @@ div.auimage{
     padding: 10px;
     color: #fffffc;
     display: flex;
+    height: 100px;
     justify-content: center;
     border-radius: 5px;
 
@@ -269,13 +275,14 @@ section#au {
     background-color: #ad3d24;
     padding: 10px;
     color: #fffffc;
+    height: 1fr;
     border-radius: 5px;
+    display: grid;
 }
 
 div.supporters {
     display: grid;
     background-color: #4e81f1;
-    max-height: inherit;
     color: #fffffc;
     border-radius: 10px;
     padding: 10px;
@@ -300,6 +307,7 @@ div#gldsup {
     color: #000000;
     display: flex;
     padding: 5px;
+    flex-wrap: wrap;
     border-radius: 10px;
     flex-direction: column;    
     align-items: center;
@@ -321,3 +329,71 @@ div#brosup {
 
 
 /* Gäller endast third */
+
+main#tmain {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: 'ada res adb';
+}
+
+
+aside#tada {
+    grid-area: ada;
+}
+aside#tadb {
+    grid-area: adb;
+}
+
+
+div#results{
+    grid-area: res;
+    display: flex;
+}
+
+section.tsad{
+ 
+}
+
+#timage {
+
+}
+
+section#tsa {
+
+}
+
+section#tsa {
+    
+}
+
+section#tsa {
+    
+}
+
+section#tsa {
+    
+}
+
+section#tsa {
+    
+}
+
+section#tsa {
+    
+}
+
+section#tsa {
+    
+}
+
+section#tsa {
+    
+}
+
+section#tsa {
+    
+}
+
+section#tsa {
+    
+}
