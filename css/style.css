@@ -18,7 +18,7 @@ body {
     padding: 0px;
     display: grid;
     row-gap: 20px;
-    grid-template-rows: 1fr 30fr 9fr;
+    grid-template-rows: 10vh 1fr 60vh;
     grid-template-areas:
     'hd'
     'mn'
@@ -332,68 +332,114 @@ div#brosup {
 
 main#tmain {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 20vw 1fr 20vw;
     grid-template-areas: 'ada res adb';
+    gap: 10px;
 }
-
-
-aside#tada {
-    grid-area: ada;
-}
-aside#tadb {
-    grid-area: adb;
-}
-
 
 div#results{
     grid-area: res;
+    display: grid;
+    gap: 5vh;
+    grid-template-rows: 1fr 1fr 1fr  1fr 1fr 1fr  1fr 1fr 1fr  1fr 1fr 1fr 1fr;
+    grid-template-areas: 'tsa' 'tsb' 'tsada' 'tsc' 'tsd' 'tse' 'tsadb' 'tsf' 'tsg' 'tsh' 'tsadc' 'tsi' 'tsj';
+}
+
+
+.ts {
+    background-color: #ff5733;
     display: flex;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 15px;
+    max-height: 40vh;
 }
 
-section.tsad{
- 
+aside#tada {
+    grid-area: ada;
+    background-color: #daa520;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+aside#tadb {
+    grid-area: adb;
+    background-color:#daa520;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
 }
 
-#timage {
-
+.timage {
+    background-color: #fffffc;
+    border-radius: 5px;
+    padding: 5px;
+}
+.timg {
+    max-height: 30vh;
 }
 
 section#tsa {
-
+    grid-area: tsa;
 }
 
-section#tsa {
+section#tsb {
+    grid-area: tsb;
     
 }
 
-section#tsa {
+section#tsada {
+    grid-area: tsada;
     
 }
 
-section#tsa {
+section#tsc {
+    grid-area: tsc;
     
 }
 
-section#tsa {
+section#tsd {
+    grid-area: tsd;
     
 }
 
-section#tsa {
+section#tse {
+    grid-area: tse;
     
 }
 
-section#tsa {
+section#tsadb {
+    grid-area: tsadb;
     
 }
 
-section#tsa {
+section#tsf {
+    grid-area: tsf;
     
 }
 
-section#tsa {
+section#tsg {
+    grid-area: tsg;
     
 }
 
-section#tsa {
+section#tsh {
+    grid-area: tsh;
+    
+}
+section#tsadc {
+    grid-area: tsadc;
+    
+}
+section#tsi {
+    grid-area: tsi;
+    
+}
+section#tsj {
+    grid-area: tsj;
     
 }
