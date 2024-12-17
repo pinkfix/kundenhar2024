@@ -108,14 +108,22 @@ main#a {
 }
 aside.adsv {
     grid-area: av;
-    background-color: #ff5733;
+    background-color: #daa520;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
     border-radius: 10px;
+    padding: 10px;
     
 }
 aside.adsh {
     grid-area: ah;
-    background-color:#ff5733;
+    background-color: #daa520;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
     border-radius: 10px;
+    padding: 10px;
 }
 section#saa {
     grid-area: saa;
@@ -341,8 +349,8 @@ div#results{
     grid-area: res;
     display: grid;
     gap: 5vh;
-    grid-template-rows: 1fr 1fr 1fr  1fr 1fr 1fr  1fr 1fr 1fr  1fr 1fr 1fr 1fr;
-    grid-template-areas: 'tsa' 'tsb' 'tsada' 'tsc' 'tsd' 'tse' 'tsadb' 'tsf' 'tsg' 'tsh' 'tsadc' 'tsi' 'tsj';
+    grid-template-rows: 1fr 1fr 1fr  1fr 1fr 1fr  1fr 1fr 1fr  1fr;
+    grid-template-areas: 'tsa' 'tsb' 'tsc' 'tsd' 'tse' 'tsf' 'tsg' 'tsh' 'tsi' 'tsj';
 }
 
 
@@ -392,11 +400,6 @@ section#tsb {
     
 }
 
-section#tsada {
-    grid-area: tsada;
-    
-}
-
 section#tsc {
     grid-area: tsc;
     
@@ -409,11 +412,6 @@ section#tsd {
 
 section#tse {
     grid-area: tse;
-    
-}
-
-section#tsadb {
-    grid-area: tsadb;
     
 }
 
@@ -431,14 +429,12 @@ section#tsh {
     grid-area: tsh;
     
 }
-section#tsadc {
-    grid-area: tsadc;
-    
-}
+
 section#tsi {
     grid-area: tsi;
     
 }
+
 section#tsj {
     grid-area: tsj;
     
