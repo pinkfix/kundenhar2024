@@ -10,6 +10,11 @@ Textfärg Huvudfärg mm: #250001                  Svartish
 
 html {
     size: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
 }
 
 body {
