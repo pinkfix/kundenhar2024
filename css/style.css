@@ -352,10 +352,9 @@ main#tmain {
 
 div#results{
     grid-area: res;
-    display: grid;
+    display: flex;
     gap: 5vh;
-    grid-template-rows: 1fr 1fr 1fr  1fr 1fr 1fr  1fr 1fr 1fr  1fr;
-    grid-template-areas: 'tsa' 'tsb' 'tsc' 'tsd' 'tse' 'tsf' 'tsg' 'tsh' 'tsi' 'tsj';
+    flex-direction: column;
 }
 
 
@@ -367,7 +366,6 @@ div#results{
     padding: 15px;
     max-height: 40vh;
 }
-
 aside#tada {
     grid-area: ada;
     background-color: #daa520;
@@ -392,55 +390,17 @@ aside#tadb {
     border-radius: 5px;
     padding: 5px;
 }
+
 .timg {
     max-height: 30vh;
 }
 
-section#tsa {
-    grid-area: tsa;
+a {
+    text-decoration-line: none;
+    color: inherit;
 }
 
-section#tsb {
-    grid-area: tsb;
-    
-}
-
-section#tsc {
-    grid-area: tsc;
-    
-}
-
-section#tsd {
-    grid-area: tsd;
-    
-}
-
-section#tse {
-    grid-area: tse;
-    
-}
-
-section#tsf {
-    grid-area: tsf;
-    
-}
-
-section#tsg {
-    grid-area: tsg;
-    
-}
-
-section#tsh {
-    grid-area: tsh;
-    
-}
-
-section#tsi {
-    grid-area: tsi;
-    
-}
-
-section#tsj {
-    grid-area: tsj;
-    
+.ts:hover {
+    background-color: #000000;
+    color: #ff5733;
 }
